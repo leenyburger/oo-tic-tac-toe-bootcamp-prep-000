@@ -61,7 +61,6 @@ class TicTacToe
       position = input_to_index(input) #converted to 0 - 8
       token = current_player
       if valid_move?(position)
-        
         move(position, token)
         display_board
         return
@@ -103,7 +102,8 @@ class TicTacToe
   end
 
   def winner
-    @board[won?[0]]
+    return @board[won?[0]] if won?
+    nil
   end
 
   def play
