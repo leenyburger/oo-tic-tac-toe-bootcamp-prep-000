@@ -59,8 +59,9 @@ class TicTacToe
       puts "What is your move? Enter a number 1 - 9"
       input = gets.chomp
       position = input_to_index(input) #converted to 0 - 8
+      token = current_player
       if valid_move?(position)
-        token = current_player
+        
         move(position, token)
         display_board
         return
