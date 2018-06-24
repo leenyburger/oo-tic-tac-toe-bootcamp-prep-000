@@ -109,7 +109,7 @@ class TicTacToe
       display_board
       turn
     end
-    puts "Congratulations #{winner} on your victory!" if won?
+    puts "Congratulations #{winner}!" if won?
     puts "Cat's Game!" if draw?
   end
 end
