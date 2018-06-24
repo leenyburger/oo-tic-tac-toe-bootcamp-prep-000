@@ -110,6 +110,6 @@ class TicTacToe
       turn
     end
     puts "Congratulations #{winner} on your victory!" if won?
-    puts "Game ended in a draw" if draw?
+    puts "Cat's Game!" if draw?
   end
 end
