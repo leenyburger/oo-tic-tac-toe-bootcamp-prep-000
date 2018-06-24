@@ -102,7 +102,7 @@ class TicTacToe
   end
 
   def winner
-    current_player
+    @board[won?[0]]
   end
 
   def play
