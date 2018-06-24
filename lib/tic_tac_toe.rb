@@ -89,7 +89,7 @@ class TicTacToe
   end
 
   def full?
-    return true if (@board.select { |element| element == ' ' } == 0)
+    return true if (@board.select { |element| element == ' ' }.count == 0)
   end
 
   def draw?
@@ -107,7 +107,7 @@ class TicTacToe
   def play
     while !over?
       display_board
-      take a turn
+      turn
     end
     puts "Congratulations #{winner} on your victory!" if won?
     puts "Game ended in a draw" if draw?
